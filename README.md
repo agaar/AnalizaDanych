@@ -1,4 +1,4 @@
-# AnalizaDanychCSV
+# AnalizaDanych
 Program analizuje dane z pliku CSV
 
 Jako parametr uruchomienia programu użytkownik musi podać nazwę pliku do wczytania oraz numer operacji do wykonania. 
