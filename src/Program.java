@@ -23,15 +23,15 @@ public class Program {
 
         } else if (args[0].contains("psy")) {
             while (scanner.hasNext()) {
-                String[] animalDetails = scanner.nextLine().split(",");
-                Animal animal;
+                String[] dogDetails = scanner.nextLine().split(",");
+                Dog dog;
 
-                if (animalDetails.length == 4) {
-                    animal = new Animal(animalDetails[0], animalDetails[1], animalDetails[2], animalDetails[3]);
+                if (dogDetails.length == 4) {
+                    dog = new Dog1(dogDetails[0], dogDetails[1], dogDetails[2], dogDetails[3]);
                 } else {
-                    animal = new Animal(animalDetails[0], animalDetails[1], animalDetails[2], animalDetails[3], animalDetails[4]);
+                    dog = new Dog2(dogDetails[0], dogDetails[1], dogDetails[2], dogDetails[3], dogDetails[4]);
                 }
-                list.add(animal);
+                list.add(dog);
             }
         } else if (args[0].contains("rowerzysci")) {
             while (scanner.hasNext()) {
@@ -39,9 +39,9 @@ public class Program {
                 Biker biker;
 
                 if (bikerDetails.length == 4) {
-                    biker = new Biker(bikerDetails[0], bikerDetails[1], bikerDetails[2], bikerDetails[3]);
+                    biker = new Biker2(bikerDetails[0], bikerDetails[1], bikerDetails[2], bikerDetails[3]);
                 } else {
-                    biker = new Biker(bikerDetails[0], bikerDetails[1], bikerDetails[2], bikerDetails[3], bikerDetails[4]);
+                    biker = new Biker1(bikerDetails[0], bikerDetails[1], bikerDetails[2], bikerDetails[3], bikerDetails[4]);
                 }
                 list.add(biker);
             }
@@ -52,7 +52,7 @@ public class Program {
                 for (int i = 0; i < Math.min(10, list.size()); i++) {
                     System.out.println(list.get(i));
                 }
-                break; 
+                break;
             case 2:
                 System.out.println(list.size());
                 break;
@@ -87,6 +87,7 @@ public class Program {
                     if(list.get(i).getId() == requiredId) {
                         System.out.println(list.get(i).getName());          //shows name of element with required id
                         //TODO jeśli element posiada parent_id to wyświetlić liczbę rodziców do samej góry
+
                     }
                 }
                 break;
