@@ -1,0 +1,9 @@
+id,name,surname,age,city,parent_id
+1,Piotr,Nowak,47,Warszawa,5
+2,Pawel,Kowalski,32,Poznan,5
+3,Wladyslaw,Nowak,11,Krakow,2
+4,Boleslaw,Kowalski,12,Krakow,2
+5,Zdzislaw,Golec,48,Warszawa,7
+6,Zbigniew,Golec,50,Poznan,0
+7,Bogumil,Golec,83,Krakow,6
+8,Waclaw,Golec,89,Krakow,6
