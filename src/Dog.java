@@ -26,4 +26,6 @@ public class Dog implements MarkerInterface {
     public int getAge() {
         return age;
     }
+
 }
+

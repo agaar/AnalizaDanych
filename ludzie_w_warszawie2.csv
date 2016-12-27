@@ -1,4 +1,4 @@
-id,name,surname,age,city,parent_id
+id,name,surname,age,city,parentId
 1,Piotr,Nowak,47,Warszawa,5
 2,Pawel,Kowalski,32,Poznan,5
 3,Wladyslaw,Nowak,11,Krakow,2

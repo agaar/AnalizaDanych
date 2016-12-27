@@ -21,10 +21,10 @@ W zależności od wybranej opcji program wykonuje jedno z kilku zadań:
 		przykładowy wynik:  
 		Piotr 1234432  
 		Paweł 148  
-5. wyświetla imię elementu o zadanym id oraz jeśli element ten posiada parametr parent_id to liczbę jego 'rodziców' do samej góry hierarchii (do elementu o parent_id = 0, w hierarchii tylko jeden obiekt może mieć parent_id = 0 i wszystkie elementy tworzą jedno drzewo)  
+5. wyświetla imię elementu o zadanym id oraz jeśli element ten posiada parametr parentId to liczbę jego 'rodziców' do samej góry hierarchii (do elementu o parentId = 0, w hierarchii tylko jeden obiekt może mieć parentId = 0 i wszystkie elementy tworzą jedno drzewo)
 		java -jar program.jar ludzie_w_warszawie.csv 5 3  
 		przykładowe dane:  
-		id,name,age,parent_id  
+		id,name,age,parentId
 		1,Piotr,47,5  
 		2,Pawel,32,5  
 		3,Wladyslaw,11,2  
