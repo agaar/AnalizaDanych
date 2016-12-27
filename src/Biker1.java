@@ -6,7 +6,6 @@ public class Biker1 extends Biker implements ParentIdInterface{
     private String rekord;
     private int parentId;
 
-
     public Biker1(String id, String name, String rekord, String age, String parentId) {
         super(id, name, age);
         this.rekord = rekord;
@@ -21,7 +20,6 @@ public class Biker1 extends Biker implements ParentIdInterface{
                 ", Wiek: " + age +
                 ", Parent_id: " + parentId + "]";
     }
-
 
     public int getParentId() {
         return parentId;

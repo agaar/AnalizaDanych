@@ -6,5 +6,4 @@ public interface MarkerInterface {
     int getId();
     String getName();
     int getAge();
-
 }

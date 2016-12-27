@@ -6,12 +6,10 @@ public class Dog implements MarkerInterface {
     String name;
     int age;
 
-
     public Dog(String id, String name, String age) {
         this.id = Integer.parseInt(id);
         this.name = name;
         this.age = Integer.parseInt(age);
-
     }
 
     @Override

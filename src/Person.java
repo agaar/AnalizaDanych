@@ -9,10 +9,6 @@ public class Person implements MarkerInterface, ParentIdInterface{
     private String city;
     private int parentId;
 
-
-
-
-
     public Person(String id, String name, String surname, String age, String city, String parentId) {
         this.id = Integer.parseInt(id);
         this.name = name;
