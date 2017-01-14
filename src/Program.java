@@ -5,15 +5,11 @@ import java.util.*;
 public class Program {
 
     public static void main(String[] args) throws FileNotFoundException {
-
         Scanner scanner = new Scanner(new File(args[0]));
         String firstLine = scanner.nextLine();
-
         int operationNumber = Integer.parseInt(args[1]);
         List<MarkerInterface> list = new ArrayList<>();
-
         if (args[0].contains("ludzie")) {
-
             while (scanner.hasNext()) {
                 String[] personDetails = scanner.nextLine().split(",");
                 Person person = new Person(personDetails[0], personDetails[1], personDetails[2], personDetails[3],
@@ -37,7 +33,6 @@ public class Program {
             while (scanner.hasNext()) {
                 String[] bikerDetails = scanner.nextLine().split(",");
                 Biker biker;
-
 
                 if (bikerDetails.length == 4) {
                     biker = new Biker2(bikerDetails[0], bikerDetails[1], bikerDetails[2], bikerDetails[3]);
@@ -149,13 +144,11 @@ public class Program {
                 System.out.print(maxAge - range + "-" + maxAge + ": ");
                 System.out.printf("%.2f", count4 * 100 / ageList.size());
                 System.out.println("%");
-
                 break;
             default:
                 System.out.println("Podaj opcje od 1 do 7");
         }
     }
-
 
     private static Map<String, Integer> sortDescByComparator(Map<String, Integer> nameMap) {
         List<Map.Entry<String, Integer>> list = new LinkedList<>(nameMap.entrySet());
@@ -170,4 +163,3 @@ public class Program {
         return sortedMap;
     }
 }
-
